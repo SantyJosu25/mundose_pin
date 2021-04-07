@@ -24,7 +24,7 @@ class ContactController extends Controller
             $contact->phone = $request->phone;
             $contact->message = $request->message;
             try {
-                Mail::to($request->email)->send(new SendContact($contact));
+                Mail::to('santy2516@gmail.com')->send(new SendContact($contact));
                 $contact->send_email = "Se envio el mail";
             } catch (\exception $e) {
                 $contact->send_email = "Fallo el envio del mail {$e->getMessage()}";

@@ -7,7 +7,9 @@
     <title>Mensaje Recibido con exíto</title>
 </head>
 <body>
-    <p>Hola! {{$contact->name }}</p>
-    <p>mensaje recibido</p>
+    <p>Hola! Mi nombre es: {{$contact->name }}</p>
+    <p>Mi email es: {{$contact->email }}</p>
+    <p>Mi teléfono es: {{$contact->phone }}</p>
+    <p>Te contacto por: {{$contact->message }}</p>
 </body>
 </html>
